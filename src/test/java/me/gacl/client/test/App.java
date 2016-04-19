@@ -16,7 +16,6 @@ public class App {
     }
 
     /**
-     * ???zookeeper
      */
     public void initialize() {
         
@@ -47,7 +46,6 @@ public class App {
     }
     
     /**
-     * ????
      * @param args
      */
     public static void main( String[] args ) {

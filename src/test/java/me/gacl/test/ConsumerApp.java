@@ -8,9 +8,6 @@ import org.slf4j.LoggerFactory;
 import javax.jms.*;
 
 /**
- *  * Created by outofmemory.cn on 14-8-26.
- *  *
- *  * activemq?????
  *  
  */
 public class ConsumerApp implements MessageListener {
@@ -19,26 +16,18 @@ public class ConsumerApp implements MessageListener {
     private static final String SUBJECT = "test-activemq-queue";
 
     public static void main(String[] args) throws JMSException {
-//???ConnectionFactory
         ConnectionFactory connectionFactory = new ActiveMQConnectionFactory(BROKER_URL);
 
-        //??mq??
         Connection conn = connectionFactory.createConnection();
-        //????
         conn.start();
 
-        //????
         Session session = conn.createSession(false, Session.AUTO_ACKNOWLEDGE);
 
-       //????????
         Destination dest = session.createQueue(SUBJECT);
-       //??mq??????
         MessageConsumer consumer = session.createConsumer(dest);
 
-        //???MessageListener
         ConsumerApp me = new ConsumerApp();
 
-        //??????????
         consumer.setMessageListener(me);
     }
 

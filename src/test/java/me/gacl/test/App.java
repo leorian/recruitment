@@ -55,8 +55,6 @@ public class App {
     }
     
     /**
-     * ?20s???? 'root1'?????
-     * @author yang
      *
      */
     private class RootNodeChangeThread implements Runnable{
