@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.List;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
+/*import javax.servlet.annotation.WebServlet;*/
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -20,7 +20,7 @@ import me.gacl.service.UserServiceI;
  * @WebServlet是Servlet3.0提供的注解，目的是将一个继承了HttpServlet类的普通java类标注为一个Servlet
  * UserServlet使用了@WebServlet标注之后，就不需要在web.xml中配置了
  */
-@WebServlet("/UserServlet")
+/*@WebServlet("/UserServlet")*/
 public class UserServlet extends HttpServlet {
 
     //处理业务逻辑的userService

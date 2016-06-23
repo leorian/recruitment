@@ -4,7 +4,7 @@ import me.gacl.domain.User;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
+/*import javax.servlet.annotation.WebServlet;*/
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -17,7 +17,7 @@ import java.util.concurrent.Executors;
 /**
  * Created by xiezhonggui on 16-4-18.
  */
-@WebServlet("/ExecutorServlet")
+/*@WebServlet("/ExecutorServlet")*/
 public class ExecutorServlet extends HttpServlet {
     private ExecutorService executorService = Executors.newFixedThreadPool(2);
     private final String string = "finalExecutorServlet";
