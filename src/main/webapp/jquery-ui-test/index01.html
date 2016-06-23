@@ -3,14 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script type="text/javascript" src="../jquery-ui-1.11.4/external/jquery/jquery.js"></script>
     <style type="text/css">
         body{
             font: 62.5% "Trebuchet MS", sans-serif;
             margin: 50px;
         }
     </style>
+    <script type="text/javascript">
+        
+        $(function () {
+            var li = document.getElementsByTagName("li");
+            var $li = $(li);
+            alert($li.html());
+        });
+
+    </script>
 </head>
 <body>
 <h1>Welcome to Recruitment!!</h1>
+<ul>
+    <li>NO.1</li>
+    <li>NO.2</li>
+    <li>NO.3</li>
+</ul>
 </body>
 </html>
